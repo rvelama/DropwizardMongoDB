@@ -84,7 +84,7 @@ public class EmployeeResource {
     @Path("/salary/sort")
     public Response getEmployee() {
         List<Document> documents = mongoService.findByCriteria(collection, "salary",
-                25000, 100, 1);
+                25000, 1000, 1);
         return Response.ok(documents).build();
     }
 

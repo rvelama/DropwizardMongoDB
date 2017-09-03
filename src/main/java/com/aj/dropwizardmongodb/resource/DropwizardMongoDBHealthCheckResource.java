@@ -3,16 +3,11 @@ package com.aj.dropwizardmongodb.resource;
 import com.codahale.metrics.health.HealthCheck;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCursor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class DropwizardMongoDBHealthCheckResource extends HealthCheck {
-
-    private static final Logger logger = LoggerFactory.getLogger(DropwizardMongoDBHealthCheckResource.class);
 
     private MongoClient mongoClient;
 
